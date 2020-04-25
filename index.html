@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Rock, Paper, Scissors! Game</title>
+</head>    
+<body>
+    <header>
+        <h1 class="roboto bold text-center">Rock, Paper, Scissors!</h1>
+    </header>
+    <main>
+        <div class="choose-body text-center">
+            <figure class="figure">
+                <img id="rock" class="choice" src="images/rock.png" alt="Rock.">
+                <figcaption id="rock-heading" class="oswald fig-caption">Rock</figcaption>
+                <button id="rock-btn" onclick="rockChoice(); showResults();" class="btn white">Choose</button>    
+            </figure>
+            <figure id="swap" class="figure">
+                <img id="paper" class="choice" src="images/paper.png" alt="Paper.">
+                <figcaption id="paper-heading" class="oswald fig-caption">Paper</figcaption>
+                <button onclick="paperChoice(); showResults()" class="btn white">Choose</button>    
+            </figure>
+            <figure class="figure">
+                <img id="scissors" class="choice" src="images/scissors.png" alt="Scissors.">
+                <figcaption id="scissors-heading" class="oswald fig-caption">Scissors</figcaption>
+                <button id="scissors-btn" onclick="scissorsChoice(); showResults()" class="btn white">Choose</button>    
+            </figure>
+        </div>    
+            
+                    
+    </main>                               
+</body>        
+</html>

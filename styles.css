@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: royalblue;
+    font-size: 80px;
+    margin: 5% 0;
+}
+
+.white {
+    color: white;
+}
+
+.text-center {
+    text-align: center;    
+}
+
+.roboto {
+    font-family: 'roboto', sans-serif;
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.choose-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.figure {
+    background-color: white;
+    border: 10px solid #5ca8ff;
+    border-radius: 20px;  
+    height: 500px;
+    margin: 0 30px;
+    padding: 40px 0;
+    text-transform: uppercase;
+    width: 380px;
+}
+    
+.fig-caption {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.choice {
+    height:250px;
+    width: 220px;
+}
+
+.btn {
+    background-color: #5ca8ff;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    outline: 0;
+    padding: 14px;
+    transition: transform .1s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn:focus {
+    background-color: royalblue;
+}
+
+.result {
+    font-size: 30px;
+}
+
+.result-user-ai, .game-count, .game-win {
+    color: #a6a6a6;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.game-count {
+    color: #000970
+}
+
+.game-win {
+    color: green;
+}
+
+.restart {
+    margin-top: 25px;
+}
+
+@media (max-width: 1200px) {
+    .choose-body {
+        flex-wrap: wrap;
+    }
+
+    .figure {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .choice {
+        height: 150px;
+        width: 120px;
+    }
+
+    .choose-body {
+        display: inline-block;
+    }
+
+    .figure {
+        display: inline-block;
+        height: 400px;
+        margin: 25px auto;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .btn {
+        cursor: default;
+    }
+
+    .result-user-ai, .game-count, .game-win {
+        font-size: 16px;
+        margin-top: 10px;
+
+    }
+}
